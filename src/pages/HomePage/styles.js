@@ -10,6 +10,7 @@ const styles = StyleSheet.create({
   buttonContainer: {
     flexDirection: "row",
     gap: 20,
+    marginBottom: 40,
   },
 });
 

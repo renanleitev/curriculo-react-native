@@ -1,11 +1,12 @@
 import { View, Text } from "react-native";
 import styles from "./styles";
 
-const Description = () => {
+const Description = (props) => {
+    const message = props.message || "Carregando API do Chuck Norris...";
+
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Renan Leite Vieira</Text>
-            <Text style={styles.subtitle}>Desenvolvedor Front-end</Text>
+            <Text style={styles.title}>{message}</Text>
         </View>
     )
 }
